@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <style>
+        .cells{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #000;
+        }
+        .inventory, .hiddenInventory, .armorInventory{
+            display: grid;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .inventory{
+            grid-template-columns: repeat(8, 50px);
+        }
+        .hiddenInventory{
+            grid-template-columns: (8,50px);
+            grid-template-rows: (3,50px)
+        }
+        .armorInventory{
+            grid-template-columns: 50px;
+            grid-template-rows: repeat(5, 50px);           ;
+        }
+    </style>
+</head>
+<body>
+    <div class="armorInventory"> 
+        <div class="cells">1</div>
+        <div class="cells">2</div>
+        <div class="cells">3</div>
+        <div class="cells">4</div>
+    </div>
+    <div class="hiddenInventory"> </div>
+    <div class="inventory"> </div>
+    <script>
+        // function showInventory() {
+        //     document.getElementById('inventory').innerHTML += /*HTML*/`        
+               
+        //     `;
+        // }
+    </script>
+</body>
+</html>
+
+
+<!-- notater :
+
+8 cells base
+
+8x3 cells unhidden
+
+4/5 vertical cells for weapons/armor
+
+-->
+
