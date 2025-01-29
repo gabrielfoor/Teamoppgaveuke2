@@ -1,18 +1,18 @@
 // path til de forskjellige items lagret som variabler
 
-let weapon1 = "/img/Wooden_Sword.jpg"
+let weapon1 = "/img/woodenSword.jpg"
 
-let pickaxe1 = "/img/Wooden_Pickaxe.jpg"
+let pickaxe1 = "/img/woodenPickaxe.jpg"
 
-let head1 = "/img/Leather_Cap.jpg"
+let head1 = "/img/leatherCap.jpg"
 
-let armor1 = "/img/Leather_Tunic.jpg"
+let armor1 = "/img/leatherTunic.jpg"
 
-let legs1 = "/img/Leather_Pants.jpg"
+let legs1 = "/img/leatherPants.jpg"
 
-let boots1 = "/img/Leather_Boots.jpg"
+let boots1 = "/img/leatherBoots.jpg"
 
-let shield = "/img/Shield.jpg"
+let shield = "/img/shield.jpg"
 
 //I funskjonen changeImg legger du først inn bildet du vil ha 
 //og så hvilken slot det skal ligge i
