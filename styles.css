@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'Minecraft';
+    src: url('Minecraft.woff2') format('woff2'),
+        url('Minecraft.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container{ /*backg*/
+    background-color: rgb(198,198,198);
+    padding: 20px;
+    width: fit-content;
+    font-family: 'Minecraft', sans-serif;
+    font-size: 10px;
+}
+.cells{
+    border: 3px solid rgb(69, 69, 69);
+    border-radius: 10%;
+    background-color: rgb(139, 139, 139);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.inventory, .hiddenInventory, .armorInventory{
+    display: grid;
+    gap: 7px;
+}
+.hiddenInventory, .armorInventory{
+    visibility: show;
+}
+.inventory{
+    grid-template-columns: repeat(8, 50px);
+}
+.hiddenInventory{
+    margin-bottom: 30px;
+    grid-template-columns: repeat(8,50px);
+    grid-template-rows: repeat(3,50px)
+    
+}
+.armorInventory{
+    margin-bottom: 30px;
+    margin-left: 57px;
+    grid-template-columns: 50px;
+    grid-template-rows: repeat(5, 50px);
+}

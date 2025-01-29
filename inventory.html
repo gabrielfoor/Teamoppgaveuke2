@@ -4,47 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inventory</title>
-    <style>
-        .container{ /*backg*/
-            background-color: rgb(198,198,198);
-            padding: 20px;
-            width: fit-content;
-        }
-        .cells{
-            border: 3px solid rgb(69, 69, 69);
-            border-radius: 10%;
-            background-color: rgb(139, 139, 139);
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            content-visibility:show;
-
-        }
-        .inventory, .hiddenInventory, .armorInventory{
-            display: grid;
-            gap: 7px;
-        }
-        .inventory{
-            grid-template-columns: repeat(8, 50px);
-        }
-        .hiddenInventory{
-            margin-bottom: 30px;
-            grid-template-columns: repeat(8,50px);
-            grid-template-rows: repeat(3,50px)
-            
-        }
-        .armorInventory{
-            margin-bottom: 30px;
-            margin-left: 60px;
-            grid-template-columns: 50px;
-            grid-template-rows: repeat(5, 50px);
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js"></script>
 </head>
 <body>
-    <div class="container">
+     <div class="container">
         <div class="armorInventory"> 
             <div id="helmet" class="cells">Helmet</div>
             <div id="body" class="cells">Body</div>
@@ -53,47 +17,42 @@
             <div id="shield" class="cells">Shield</div>
         </div>
         <div class="hiddenInventory">
-            <div id="9" class="cells">9</div>
-            <div id="10" class="cells">10</div>
-            <div id="11" class="cells">11</div>
-            <div id="12" class="cells">12</div>
-            <div id="13" class="cells">13</div>
-            <div id="14" class="cells">14</div>
-            <div id="15" class="cells">15</div>
-            <div id="16" class="cells">16</div>
-            <div id="17" class="cells">17</div>
-            <div id="18" class="cells">18</div>
-            <div id="19" class="cells">19</div>
-            <div id="20" class="cells">20</div>
-            <div id="21" class="cells">21</div>
-            <div id="22" class="cells">22</div>
-            <div id="23" class="cells">23</div>
-            <div id="24" class="cells">24</div>
-            <div id="25" class="cells">25</div>
-            <div id="26" class="cells">26</div>
-            <div id="27" class="cells">27</div>
-            <div id="28" class="cells">28</div>
-            <div id="29" class="cells">29</div>
-            <div id="30" class="cells">30</div>
-            <div id="31" class="cells">31</div>
-            <div id="32" class="cells">32</div>
-        </div>
+            <div id="9" class="cells"></div>
+            <div id="10" class="cells"></div>
+            <div id="11" class="cells"></div>
+            <div id="12" class="cells"></div>
+            <div id="13" class="cells"></div>
+            <div id="14" class="cells"></div>
+            <div id="15" class="cells"></div>
+            <div id="16" class="cells"></div>
+            <div id="17" class="cells"></div>
+            <div id="18" class="cells"></div>
+            <div id="19" class="cells"></div>
+            <div id="20" class="cells"></div>
+            <div id="21" class="cells"></div>
+            <div id="22" class="cells"></div>
+            <div id="23" class="cells"></div>
+            <div id="24" class="cells"></div>
+            <div id="25" class="cells"></div>
+            <div id="26" class="cells"></div>
+            <div id="27" class="cells"></div>
+            <div id="28" class="cells"></div>
+            <div id="29" class="cells"></div>
+            <div id="30" class="cells"></div>
+            <div id="31" class="cells"></div>
+            <div id="32" class="cells"></div>
+        </div> 
         <div class="inventory">
-            <div id="1" class="cells">1</div>
-            <div id="2" class="cells">2</div>
-            <div id="3" class="cells">3</div>
-            <div id="4" class="cells">4</div>
-            <div id="5" class="cells">5</div>
-            <div id="6" class="cells">6</div>
-            <div id="7" class="cells">7</div>
-            <div id="8" class="cells">8</div> 
+            <div id="1" class="cells" onclick="changeImg(weapon1, 25)"><img src="/img/Wooden_Sword.jpg" alt=""style="height: 45px;"></div>
+            <div id="2" class="cells" onclick="changeImg(pickaxe1, 26)"><img src="/img/Wooden_Pickaxe.jpg" alt=""style="height: 45px;"></div>
+            <div id="3" class="cells" onclick="changeImg(head1, 'helmet')"><img src="/img/Leather_Cap.jpg" alt=""style="height: 45px;"></div>
+            <div id="4" class="cells" onclick="changeImg(armor1, 'body')"><img src="/img/Leather_Tunic.jpg" alt=""style="height: 45px;"></div>
+            <div id="5" class="cells" onclick="changeImg(legs1, 'legs')"><img src="/img/Leather_Pants.jpg" alt=""style="height: 45px;"></div>
+            <div id="6" class="cells" onclick="changeImg(boots1, 'boots')"><img src="/img/Leather_Boots.jpg" alt=""style="height: 45px;"></div>
+            <div id="7" class="cells" onclick="changeImg(shield, 'shield')"><img src="img/Shield.jpg" alt=""style="height: 45px;"></div>
+            <div id="8" class="cells" onclick="show()">...</div> 
         </div>
     </div>
-    <script>
-    
-    // function start(){}
-    
-    // }
-    </script>
 </body>
 </html>
+
