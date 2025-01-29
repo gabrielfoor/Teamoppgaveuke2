@@ -3,15 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minecraft inventory</title>
+    <title>Inventory</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js"></script>
 </head>
 <body>
-    <button>open/hide</button>
-
-
-
-
-<script src="script.js"></script>
-
+     <div class="container">
+        <div class="armorInventory"> 
+            <div id="helmet" class="cells">Helmet</div>
+            <div id="body" class="cells">Body</div>
+            <div id="legs" class="cells">Legs</div>
+            <div id="boots" class="cells">Boots</div>
+            <div id="shield" class="cells">Shield</div>
+        </div>
+        <div class="hiddenInventory">
+            <div id="9" class="cells"></div>
+            <div id="10" class="cells"></div>
+            <div id="11" class="cells"></div>
+            <div id="12" class="cells"></div>
+            <div id="13" class="cells"></div>
+            <div id="14" class="cells"></div>
+            <div id="15" class="cells"></div>
+            <div id="16" class="cells"></div>
+            <div id="17" class="cells"></div>
+            <div id="18" class="cells"></div>
+            <div id="19" class="cells"></div>
+            <div id="20" class="cells"></div>
+            <div id="21" class="cells"></div>
+            <div id="22" class="cells"></div>
+            <div id="23" class="cells"></div>
+            <div id="24" class="cells"></div>
+            <div id="25" class="cells"></div>
+            <div id="26" class="cells"></div>
+            <div id="27" class="cells"></div>
+            <div id="28" class="cells"></div>
+            <div id="29" class="cells"></div>
+            <div id="30" class="cells"></div>
+            <div id="31" class="cells"></div>
+            <div id="32" class="cells"></div>
+        </div> 
+        <div class="inventory">
+            <div id="1" class="cells" onclick="changeImg(weapon1, 25)"><img src="/img/Wooden_Sword.jpg" alt=""style="height: 45px;"></div>
+            <div id="2" class="cells" onclick="changeImg(pickaxe1, 26)"><img src="/img/Wooden_Pickaxe.jpg" alt=""style="height: 45px;"></div>
+            <div id="3" class="cells" onclick="changeImg(head1, 'helmet')"><img src="/img/Leather_Cap.jpg" alt=""style="height: 45px;"></div>
+            <div id="4" class="cells" onclick="changeImg(armor1, 'body')"><img src="/img/Leather_Tunic.jpg" alt=""style="height: 45px;"></div>
+            <div id="5" class="cells" onclick="changeImg(legs1, 'legs')"><img src="/img/Leather_Pants.jpg" alt=""style="height: 45px;"></div>
+            <div id="6" class="cells" onclick="changeImg(boots1, 'boots')"><img src="/img/Leather_Boots.jpg" alt=""style="height: 45px;"></div>
+            <div id="7" class="cells" onclick="changeImg(shield, 'shield')"><img src="img/Shield.jpg" alt=""style="height: 45px;"></div>
+            <div id="8" class="cells" onclick="show()">...</div> 
+        </div>
+    </div>
 </body>
 </html>
+
